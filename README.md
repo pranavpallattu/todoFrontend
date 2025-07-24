@@ -1,12 +1,85 @@
-# React + Vite
+# MERN Task Manager - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of a simple Task Manager application built with **React (Vite bundler)** and styled using **Tailwind CSS**. It allows users to add, edit, delete, sort, and filter tasks with a clean, responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ How to Run Locally
 
-## Expanding the ESLint configuration
+### ✅ Prerequisites
+- Node.js and npm installed
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ Setup Steps
+
+```bash
+git clone https://github.com/pranavpallattu/todoFrontend.git
+cd todoFrontend
+npm install
+npm run dev
+
+⚠️ Make sure the backend is running at http://localhost:4000 or your deployed Backend API URL, and update the value in src/services/serverUrl.js accordingly.
+
+
+
+📁 Folder Structure
+
+src/
+├── components/        # UI Components (Body, TaskForm, FilterBar, TaskContainer, TaskItem)
+├── hooks/             # Custom hooks (add, update, delete, toggle)
+├── services/          # Axios API functions
+├── utils/             # Input validation logic
+├── App.jsx            # Main layout
+
+
+
+🚀 Design Choices
+
+✅ Tailwind CSS for responsive, utility-first styling
+
+✅ Custom hooks for modular and maintainable logic
+
+✅ SweetAlert2 for consistent user feedback
+
+✅ Axios for REST API calls
+
+✅ Shimmer Loader for better loading UX
+
+
+
+🚀 Live Demo
+
+👉 Frontend: https://todo-inky-psi.vercel.app
+
+👉 Backend API: https://todo-server-lj7d.onrender.com
+
+
+
+✅ Features
+
+✅ Add new tasks
+
+✅ Edit task title
+
+✅ Toggle complete / incomplete
+
+✅ Delete tasks with confirmation
+
+✅ Filter by All, Completed, or Pending
+
+✅ Sort by Newest or Oldest
+
+✅ SweetAlert popups for actions
+
+✅ Validation for empty task entries
+
+✅ Shimmer loading indicator
+
+## 📸 Screenshot
+
+🚀 Task Manager UI  
+![Task Manager UI](./src/assets/todoimg.png)
+
+
+
+
+🚀 Author -  Pranav P S
