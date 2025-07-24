@@ -20,7 +20,7 @@ const useAddTask = (onStateChange) => {
         icon: "success",
         title: "Task Added!",
         text: "Your task was added successfully.",
-        confirmButtonColor: "#16a34a", // optional green
+        confirmButtonColor: "#16a34a", 
       });
       onStateChange();
     } else {

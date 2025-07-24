@@ -10,7 +10,7 @@ const useUpdateTaskTitle = (onStateChange) => {
         icon: "error",
         title: "Oops!",
         text: errorMessage,
-        confirmButtonColor: "#d33", // red
+        confirmButtonColor: "#d33", 
       });
       return errorMessage;
     }
